@@ -1,7 +1,11 @@
 var React = require('react');
 
 const Weathertitle = (props) => {
-	return ( <h1>Weather Title Component</h1> );
+	var styles = {
+		textAlign: 'center'
+	};
+
+	return ( <h1 style={styles}>Weather</h1> );
 };
 
 module.exports = Weathertitle;

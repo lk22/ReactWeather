@@ -1,7 +1,8 @@
 var React = require('react');
 
 const About = (props) => {
-	return ( <h3>About Component</h3> );
+	var styles = {textAlign: 'center'};
+	return ( <h3 styles={styles}>About</h3> );
 };
 
 module.exports = About;

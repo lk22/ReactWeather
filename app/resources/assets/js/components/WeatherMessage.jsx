@@ -8,7 +8,8 @@ var React = require('react');
 // });
 
 var WeatherMessage = ({temp, location}) => {
-	return ( <h3>it is {temp} in {location}</h3> )
+	var styles = {textAlign: 'center'};
+	return ( <h3 style={styles}>it is {temp} in {location}</h3> )
 };
 
 module.exports = WeatherMessage;
