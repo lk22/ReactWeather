@@ -2,9 +2,15 @@
 var React = require('react');
 var {Link, IndexLink} = require('react-router');
 
-const Nav = (props) => {
+const Nav = React.createClass({
 
-	return(
+	onSearch: function(e) {
+		e.preventDefault();
+		alert('not yet wired up');
+	},
+
+	render:function() {
+		return(
 	       <div className="top-bar">
 	       		<div className="top-bar-left">
 	       			<ul className="menu">
@@ -21,11 +27,21 @@ const Nav = (props) => {
 	       			</ul>
 	       		</div>
 	       		<div className="top-bar-right">
-
+	       			<form onSubmit={this.onSearch}>
+						<ul className="menu">
+							<li>
+								<input tyoe="search" placeholder="get your weather here"/>
+							</li>
+							<li>
+								<input type="submit" className="button" value="Get weather" />
+							</li>
+						</ul>
+	       			</form>
 	       		</div>
 	       </div>
-	);
-};
+		);
+	}
+});
 
 const oldNav = (
 <div>
