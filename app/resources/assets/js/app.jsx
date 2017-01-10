@@ -3,6 +3,10 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var {Route, Router, IndexRoute, HashHistory} = require('react-router');
 
+// foundation CSS
+require('style!css!foundation-sites/dist/foundation.min.css');
+$(document).foundation();
+
 // page components
 var Main = require('Main');
 var Weather = require('Weather');
