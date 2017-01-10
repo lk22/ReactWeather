@@ -10,7 +10,7 @@ const Main = (props) => {
 	    <div>
 	    	<Nav/>
 	    	<div className="row">
-	    		<div className="medium-6 large-4 small-centered columns">
+	    		<div className="medium-8 large-4 small-centered columns">
 	    			{props.children}
 	    		</div>
 	    	</div>
