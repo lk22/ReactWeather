@@ -7,6 +7,9 @@ var {Route, Router, IndexRoute, HashHistory} = require('react-router');
 require('style!css!foundation-sites/dist/foundation.min.css');
 $(document).foundation();
 
+// application stylesheet
+require('style!css!applicationStyles');
+
 // page components
 var Main = require('Main');
 var Weather = require('Weather');
