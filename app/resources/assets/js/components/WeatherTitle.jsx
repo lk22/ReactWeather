@@ -5,7 +5,7 @@ const Weathertitle = (props) => {
 		textAlign: 'center'
 	};
 
-	return ( <h1 style={styles}>Weather</h1> );
+	return ( <h1 className="text-center">Weather</h1> );
 };
 
 module.exports = Weathertitle;
